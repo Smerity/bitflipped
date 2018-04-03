@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <unistd.h>
+#include <sys/mman.h>
 
 // https://stackoverflow.com/questions/9596945/how-to-get-appropriate-timestamp-in-c-for-logs
 char *timestamp()
@@ -20,6 +22,10 @@ int main() {
   printf("==================\n");
   printf("Allocating a gigabyte ...\n");
   unsigned char *buffer = (unsigned char *)calloc(bytes, 1);
+
+  // Ensure the buffer is actually resident in RAM
+  mlock(buffer, bytes);
+  memset(buffer, 0, bytes);
 
   printf("Run started: %s\n", timestamp());
 
