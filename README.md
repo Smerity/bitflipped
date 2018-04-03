@@ -1,7 +1,7 @@
 # Bitflipped
 _Your computer is a cosmic ray detector. Literally._
 
-![Brightness by Chameleon Design from the Noun Project](./brightness.png)
+<img src="brightness.png" alt="Brightness by Chameleon Design from the Noun Project" width="150px" align="center" />
 
 ---
 
