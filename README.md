@@ -1,6 +1,8 @@
 # Bitflipped
 _Your computer is a cosmic ray detector. Literally._
 
+![Brightness by Chameleon Design from the Noun Project](./bright_noun_project.svg)
+
 ---
 
 Cosmic rays hit computer RAM all the time. If your RAM is not ECC protected, it will likely flip a random bit. A single bit in billions of bits. Does it matter? [Yes. Yes it does.](https://twitter.com/whitequark/status/980522328151834624)
@@ -16,3 +18,7 @@ Detection is via allocating a slice of zeroed memory, in our case a gigabyte, an
 + The bigger your RAM, the bigger your detector, so use a desktop's RAM if you can
 + The background radiation from cosmic rays increases with altitude, from 0.3 mSv per year for sea-level areas to 1.0 mSv per year for higher-altitude cities, so for best results use this on a plane or in outer space
 + Beware smart memory systems - the Mac will compress least unused chunks of memory when running low on RAM and zeroes would compress quite well, effectively reducing the size of your cosmic ray detector =\[
+
+**Thanks to:**
++ Thanks to [Brightness by Chameleon Design from the Noun Project](https://thenounproject.com/search/?q=brightness&i=374305) for the logo
++ Our computers for putting up with unsafe workplaces
